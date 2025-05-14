@@ -13,9 +13,10 @@ resource "google_compute_instance_template" "default" {
   auto_delete = true
 
   initialize_params {
-    image = "debian-11"
+    image = "projects/debian-cloud/global/images/family/debian-11"
   }
 }
+
 
 
   network_interface {
